@@ -1,15 +1,26 @@
-n=int(input('Quanti elementi?:'))
-lista=[n]
-
-for i in lista:
-    numero=String(input('Elemento:'))
-    lista.insert(0,numero)
-
-c=0
+print("FOR LOOP")
+n = int(input("How many names do you want to enter?:"))
+list_for = []
+# Entering names
 for i in range(n):
-    print('Elemento in posizione:', i, 'vale', lista[i])
-    if lista[i]>=50 and lista[i]<=100:
-        c+=1
+    name_for = (input("Insert name:"))
+    list_for.insert(i, name_for)
+# Printing of names
+print("\t\tList of the names:")
+for i in range(n):
+    print("The name in position ", i, "is: ", list_for[i])
 
-print('Ci sono in tutto', c ,'elementi compresi nell\'intervallo')
-
+print("WHILE LOOP")
+list_while = []
+j = 0
+# Entering names
+while j < n:
+    name_while = (input("Insert name:"))
+    list_while.insert(j, name_while)
+    j+= 1
+j = 0
+# Printing of names
+print("\t\tList of the names:")
+while j < n:
+    print("The name in position ", j, "is: ", list_for[j])
+    j+= 1
