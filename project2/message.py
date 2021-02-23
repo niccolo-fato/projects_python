@@ -20,4 +20,5 @@ server.starttls()
 # Sending the message
 server.login(my_email, my_password)
 server.sendmail(my_email, receiver, message)
+print("~Email successfully sent~")
 server.close()
