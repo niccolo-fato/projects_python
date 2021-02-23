@@ -14,9 +14,10 @@ message = str(input("Insert the message you want to send:"))
 print("I am connecting with the Server...")
 # This setup works for gmail
 server = smtplib.SMTP("smtp.gmail.com", 587)
+server.ehlo()
 # Encrypted email
 server.starttls()
 # Sending the message
-server.login("my_email", "my_password")
-server.sendmail("my_email", "", message)
+server.login(my_email, my_password)
+server.sendmail(my_email, receiver, message)
 server.close()
