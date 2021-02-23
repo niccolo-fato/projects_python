@@ -11,6 +11,6 @@ contenuto = oggetto + messaggio
 print("Sto effettuando la connessione col Server...")
 server = smtplib.SMTP("smtp.gmail.com", 587) # questa configurazione funziona per gmail
 server.starttls() # email criptata
-server.login("niccolofato13@gmail.com", "Nick200312")
+server.login("niccolofato13@gmail.com", "")
 server.sendmail("niccolofato13@gmail.com", "niccolofato14@gmail.com", contenuto)
 server.close()
