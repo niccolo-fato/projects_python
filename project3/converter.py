@@ -1,4 +1,4 @@
-#Youtube video to mpš converter
+#Youtube video to mp3 converter
 from pytube import YouTube
 from moviepy.editor import *
 """
