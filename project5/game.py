@@ -3,11 +3,11 @@ import random
 
 pygame.init()
 
-background = pygame.image.load("/home/niccolo/projects_python/projects_python/project5/image/background.png")
-bird = pygame.image.load("/home/niccolo/projects_python/projects_python/project5/image/bird.png")
-game_over = pygame.image.load("/home/niccolo/projects_python/projects_python/project5/image/game_over.png")
-base = pygame.image.load("/home/niccolo/projects_python/projects_python/project5/image/base.png")
-tube_below = pygame.image.load("/home/niccolo/projects_python/projects_python/project5/image/tube.png")
+background = pygame.image.load("/home/niccolo/projects/projects_python/project5/image/background.png")
+bird = pygame.image.load("/home/niccolo/projects/projects_python/project5/image/bird.png")
+game_over = pygame.image.load("/home/niccolo/projects/projects_python/project5/image/game_over.png")
+base = pygame.image.load("/home/niccolo/projects/projects_python/project5/image/base.png")
+tube_below = pygame.image.load("/home/niccolo/projects/projects_python/project5/image/tube.png")
 tube_above = pygame.transform.flip(tube_below, False, True)
 
 screen = pygame.display.set_mode((288,512))
